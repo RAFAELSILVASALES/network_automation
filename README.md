@@ -78,8 +78,54 @@ $ pip3 install netmiko
 
 ```
 
-## Em breve mais conteúdo sobre automação de redes
+## Exemplo ----
 
-##
+'''
+from netmiko import ConnectHandler
+
+- Dicionário para definir os parâmetros do dispositivo  
+  device = {
+  'device_type': 'cisco_xe',
+  'ip': '192.168.32.68',
+  'username': 'admin',
+  'password': 'cisco'
+  }
+- Conexão via SSH
+  connect = ConnectHandler(\*\*device)
+
+- ConnectHandler(): Esse é o método que inicia uma conexão com o dispositivo.
+
+print(connect.find_prompt())
+
+output = connect.send_command("show ip arp")
+
+- send_command(): É o método para enviar um comando para o dispositivo.
+
+config_commands = [
+"enable",
+"configure t",
+"line console 0",
+"password cisco",
+"login",
+"exit",
+"enable secret cisco",
+"banner motd # ACESSO PROIBIDO # ",
+"line vty 0 4",
+"password cisco",
+"login ",
+"exit",
+"service password-encryption",
+"security passwords min-length 5",
+"login block-for 120 attempts 3 within 30",
+]
+
+cfg_output = connect.send_config_set(config_commands)
+
+- send_config_set(): Este é um método pode ser usado para enviar uma lista de comandos de configuração para o dispositivo.
+
+print(cfg_output)
+'''
+
+## Em breve mais conteúdo sobre automação de redes.
 
 ##
