@@ -17,13 +17,15 @@ A biblioteca fornece suporte a vários fabricantes e modelos de dispositivos de 
 
 ```
 $ pip install netmiko
-<a href="https://pypi.org/project/netmiko/"> Documentação </a>
+
 ```
+
+- <a href="https://pypi.org/project/netmiko/"> Documentação </a>
 
 ## Também a opção de criar um ambiente virtual
 
-Para Windows
-No Terminal digite
+Para Windows:
+Digite no Terminal
 
 ```
 $ python -m venv   venv
@@ -42,8 +44,8 @@ $ pip install netmiko
 
 ```
 
-Para Linux  
- No Terminal digite
+Para Linux:
+Digite no Terminal
 
 ```
 $ pip3 install virtualenv
@@ -61,7 +63,7 @@ Para criar um ambiente virtual python digite no terminal:
 $ virtualenv <venv>
 ```
 
-Para ativar o ambiente, digite::
+Para ativar o ambiente, digite:
 
 ```
 $ cd venv
