@@ -129,7 +129,7 @@ print(cfg_output)
 ## Exemplo:
 
 - [Exemplo Netmiko](readme_ex.md)
-- [Backup](readme_ex_backup)
+- [Backup](https://github.com/RAFAELSILVASALES/network_automation/blob/main/readme_ex_backup.md)
 
 ## Em breve mais conteúdo sobre automação de redes.
 
