@@ -126,6 +126,10 @@ cfg_output = connect.send_config_set(config_commands)
 print(cfg_output)
 ```
 
+## Exemplo:
+
+- [Exemplo Netmiko](readme_ex.md)
+
 ## Em breve mais conteúdo sobre automação de redes.
 
 ##
